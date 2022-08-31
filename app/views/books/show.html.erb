@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3">
-      <%= render partial: 'users/user',locals: { 'current_user.name': '@book.user.name', 'current_user.introduction': '@book.user.introduction', book: book=Book.new } %>
+      <%= render partial: 'users/user',locals: { current_user: @book.user, book: book=Book.new } %>
     </div>
     <div class="col-md-8 offset-md-1">
       <h2>Book detail</h2>
